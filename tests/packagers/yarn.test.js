@@ -21,7 +21,7 @@ describe('yarn', () => {
   });
 
   it('should return packager sections', () => {
-    expect(yarnModule.copyPackageSectionNames).toEqual(['resolutions']);
+    expect(yarnModule.copyPackageSectionNames()).toEqual(['resolutions']);
   });
 
   it('does not require to copy modules', () => {
