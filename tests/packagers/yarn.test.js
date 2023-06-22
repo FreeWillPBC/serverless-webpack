@@ -24,6 +24,10 @@ describe('yarn', () => {
     expect(yarnModule.copyPackageSectionNames()).toEqual(['resolutions']);
   });
 
+  it('should return packager sections from config', () => {
+    expect(yarnModule.copyPackageSectionNames({ copyPackageSectionNames: ['type'] })).toEqual(['type']);
+  });
+
   it('does not require to copy modules', () => {
     expect(yarnModule.mustCopyModules).toBe(false);
   });

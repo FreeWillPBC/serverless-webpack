@@ -438,13 +438,14 @@ Using yarn will switch the whole packaging pipeline to use yarn, so does it use 
 
 The yarn packager supports the following `packagerOptions`:
 
-| Option             | Type | Default | Description                                         |
-| ------------------ | ---- | ------- | --------------------------------------------------- |
-| ignoreScripts      | bool | false   | Do not execute package.json hook scripts on install |
-| noInstall          | bool | false   | Do not run `yarn install` (assume install completed)|
-| noNonInteractive   | bool | false   | Disable interactive mode when using Yarn 2 or above |
-| noFrozenLockfile   | bool | false   | Do not require an up-to-date yarn.lock              |
-| networkConcurrency | int  |         | Specify number of concurrent network requests       |
+| Option                  | Type     | Default         | Description                                                         |
+|-------------------------|----------|-----------------|---------------------------------------------------------------------|
+| ignoreScripts           | bool     | false           | Do not execute package.json hook scripts on install                 |
+| noInstall               | bool     | false           | Do not run `yarn install` (assume install completed)                |
+| noNonInteractive        | bool     | false           | Disable interactive mode when using Yarn 2 or above                 |
+| noFrozenLockfile        | bool     | false           | Do not require an up-to-date yarn.lock                              |
+| networkConcurrency      | int      |                 | Specify number of concurrent network requests                       |
+| copyPackageSectionNames | string[] | ['resolutions'] | Entries in your `package.json` to copy to the output `package.json` |
 
 ##### Common packager options
 
