@@ -1,5 +1,8 @@
 {
-  "name": "serverless-webpack",
+  "name": "@freewillpbc/serverless-webpack",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },  
   "version": "5.11.0",
   "description": "Serverless plugin to bundle your javascript with Webpack",
   "main": "index.js",

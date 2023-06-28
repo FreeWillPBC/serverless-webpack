@@ -1,3 +1,9 @@
+# FREEWILL FORK
+
+We can delete the fork and it's published package when:
+- https://github.com/serverless-heaven/serverless-webpack/pull/1495 is merged and `serverless-webpack` releases a new version
+- we upgrade to that new version
+
 # Serverless Webpack
 
 [![Serverless][ico-serverless]][link-serverless]
